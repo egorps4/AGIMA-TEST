@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Форма обратной связи</title>
+</head>
+
+<body>
+    <div class="form">
+        <div class="form__content">
+            <h2 class="form__title">Форма <span>обратной</span> связи</h2>
+            <form class="form__body">
+                <div class="form__element">
+                    <label class="form__label" for="email">Email:</label>
+                    <input class="form__input" type="email" id="email" name="email" required>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="name">Имя:</label>
+                    <input class="form__input" type="text" id="name" name="name" required>
+                </div>
+                <div class="form__rating">
+                    <input type="hidden" id="rating" name="rating" value="0">
+                    <div class="form__rating-title">Оцените страницу:</div>
+                    <div class="form__rating-body" data-total-value="0">
+                        <div class="form__rating-item" data-value="1">★</div>
+                        <div class="form__rating-item" data-value="2">★</div>
+                        <div class="form__rating-item" data-value="3">★</div>
+                        <div class="form__rating-item" data-value="4">★</div>
+                        <div class="form__rating-item" data-value="5">★</div>
+                        <div class="form__rating-item" data-value="6">★</div>
+                        <div class="form__rating-item" data-value="7">★</div>
+                        <div class="form__rating-item" data-value="8">★</div>
+                        <div class="form__rating-item" data-value="9">★</div>
+                        <div class="form__rating-item" data-value="10">★</div>
+                    </div>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="comment">Комментарий:</label>
+                    <textarea class="form__comment" id="comment" name="comment" required></textarea>
+                </div>
+                <button class="form__btn" type="submit">Отправить</button>
+            </form>
+            <div class="form__errors"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

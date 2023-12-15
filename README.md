@@ -1,3 +1,0 @@
-# Test
-# AGIMA-TEST
-# AGIMA-TEST
